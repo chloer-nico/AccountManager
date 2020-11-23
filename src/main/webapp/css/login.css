@@ -1,0 +1,184 @@
+body {
+    background-image: url("../images/login/1.jpeg");;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#chart_frame {
+    width: 800px;
+    height: 700px;
+    padding: 13px;
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: -150px;
+    /*让margin-left取负值表示包含块向左移动，使包含块的左边距减去前面元素的右边距为指定负值。*/
+
+    background-color: rgba(240, 255, 255, 0.4);
+    /*添加透明效果*/
+    border-radius: 10px;
+    text-align: center;
+}
+#login_frame {
+    width: 400px;
+    height: 300px;
+    padding: 13px;
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    margin-left: -190px;
+    margin-top: -150px;
+    /*让margin-left取负值表示包含块向左移动，使包含块的左边距减去前面元素的右边距为指定负值。*/
+
+    background-color: rgba(240, 255, 255, 0.4);
+    /*添加透明效果*/
+    border-radius: 10px;
+    text-align: center;
+}
+#center_frame {
+    width: 400px;
+    height: 260px;
+    padding: 13px;
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+    /*让margin-left取负值表示包含块向左移动，使包含块的左边距减去前面元素的右边距为指定负值。*/
+
+    background-color: rgba(240, 255, 255, 0.4);
+    /*添加透明效果*/
+    border-radius: 10px;
+    text-align: center;
+}
+#logo_frame {
+    width: 85px;
+    height: 85px;
+    padding: 1px;
+
+    position: absolute;
+
+    left: 15%;
+    top: 15%;
+    margin-left: -20px;
+    margin-top: -10px;
+    /*让margin-left取负值表示包含块向左移动，使包含块的左边距减去前面元素的右边距为指定负值。*/
+
+    background-color: rgba(240, 255, 255, 0.1);
+    /*添加透明效果*/
+    border-radius: 3px;
+    border-color: lightskyblue;
+    border-style: ridge;
+    text-align: center;
+    color: lightpink;
+}
+form p > * {
+    /*输入框和label对齐*/
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#image_logo {
+    margin-top: 22px;
+}
+.chart_input {
+    font-size: 14px;
+    font-family: 宋体;
+    width: 120px;
+    height: 40px;
+    line-height: 28px;
+    text-align: center;
+    color: white;
+    background-color: #3CD8FF;
+    /*border-radius: 5px;*/
+    border-radius: 5px;
+}
+.label_input {
+    font-size: 14px;
+    font-family: 宋体;
+    width: 85px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: white;
+    background-color: #3CD8FF;
+    /*border-radius: 5px;*/
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.text_field {
+    /*设置圆角*/
+    width: 230px;
+    height: 28px;
+    text-align: center;
+    /*border-radius: 5px;*/
+    border: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white;
+}
+
+.chart_field{
+    width: 120px;
+    height: 28px;
+    text-align: center;
+    /*border-radius: 5px;*/
+    border: 0;
+    /*border-radius: 5px;*/
+    /*border-style: ;*/
+    background-color: white;
+}
+
+.btn {
+    font-size: 14px;
+    font-family: 宋体;
+
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+
+    color: white;
+    background-color: #3BD9FF;
+    border-radius: 6px;
+    border: 0;
+
+    /*float: left;*/
+}
+
+#forget_pwd {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    float: right;
+    top: 3px;
+}
+
+#register {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    float: right;
+    top: 25px;
+    margin-right: -55px;
+}
+
+
+/*#forget_pwd:hover {*/
+/*    color: blue;*/
+/*    text-decoration: underline;*/
+/*!*    去除联接的下划线*!*/
+/*}*/
+
+#login_control {
+    padding: 0 28px;
+}
