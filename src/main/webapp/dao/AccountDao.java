@@ -74,6 +74,7 @@ public class AccountDao {
         String sql="update account set time=?,type=?,money=?,remark=? where accountid=?";
         pState=conn.prepareStatement(sql);
         DateFormat format= new SimpleDateFormat("yyyy-MM-dd");
+        int resultNum = 0;
         try{
             //java.util.date-->java.sql.date
             java.sql.Date sqlDate= new java.sql.Date(account.getTime().getTime());
@@ -82,14 +83,16 @@ public class AccountDao {
             pState.setDouble(3,account.getMoney());
             pState.setString(4,account.getRemark());
             pState.setInt(5,account.getAccountId());
+            //resultNum为受影响的行数,1表示更新成功，0表示更新失败
+            resultNum=pState.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
         }finally {
-            //resultNum为受影响的行数,1表示更新成功，0表示更新失败
-            int resultNum=pState.executeUpdate();
+
             JdbcUtil.resultFree(null,pState,conn);
-            return resultNum;
+
         }
+        return resultNum;
     }
     /**根据年份统计账单*/
     public List<Account> queryByYear(int id,String year) throws Exception {
